@@ -42,4 +42,4 @@ jobs:
                   log_output="${{ github.event.inputs.log_output }}"
                   export log_output
                   chmod +x backup.bash
-                  sudo -E ./backup.bash "${{ github.event.inputs.server }}"
+                  ./backup.bash "${{ github.event.inputs.server }}"
